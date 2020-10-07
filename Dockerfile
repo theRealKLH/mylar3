@@ -2,7 +2,7 @@ ARG BASE_VERSION=3.8.2-alpine3.11
 FROM python:${BASE_VERSION}
 
 # set version label
-ARG MYLAR_COMMIT=v0.3.0
+ARG MYLAR_COMMIT=v0.4.6
 LABEL version ${BASE_VERSION}_${MYLAR_COMMIT}
 
 RUN \

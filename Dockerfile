@@ -12,12 +12,12 @@ echo "**** install system packages ****" && \
  # cfscrape dependecies
  nodejs \
  # unrar-cffi & Pillow dependencies
- build-base=0.5-r1 \
+ build-base \
  # unar-cffi dependencies
- libffi-dev=3.2.1-r6 \
+ libffi-dev \
  # Pillow dependencies
- zlib-dev=1.2.11-r3 \
- jpeg-dev=8-r6
+ zlib-dev \
+ jpeg-dev
 
 # It might be better to check out release tags than python3-dev HEAD.
 # For development work I reccomend mounting a full git repo from the

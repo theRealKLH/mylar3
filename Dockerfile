@@ -1,4 +1,4 @@
-ARG BASE_VERSION=3.8.2-alpine3.11
+ARG BASE_VERSION=3.8.6-alpine3.12
 FROM python:${BASE_VERSION}
 
 # set version label
@@ -8,9 +8,9 @@ LABEL version ${BASE_VERSION}_${MYLAR_COMMIT}
 RUN \
 echo "**** install system packages ****" && \
  apk add --no-cache \
- git=2.26.2-r0 \
+ git \
  # cfscrape dependecies
- nodejs=12.18.4-r0 \
+ nodejs \
  # unrar-cffi & Pillow dependencies
  build-base=0.5-r1 \
  # unar-cffi dependencies
